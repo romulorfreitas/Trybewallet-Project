@@ -18,6 +18,7 @@ class Table extends Component {
               <th>Câmbio utilizado</th>
               <th>Valor convertido</th>
               <th>Moeda de conversão</th>
+              <th>Editar/Excluir</th>
             </tr>
           </thead>
         </table>
@@ -39,6 +40,9 @@ class Table extends Component {
                     .toFixed(2)}
                 </td>
                 <td>Real</td>
+                <button type="button">
+                  Editar
+                </button>
               </tr>
             ))}
           </tbody>
