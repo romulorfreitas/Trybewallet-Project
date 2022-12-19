@@ -3,6 +3,7 @@ export const USER = 'USER';
 export const REQUEST_API_INFO = 'REQUEST_API_INFO';
 export const GET_CURRENCIES = 'GET_CURRENCIES';
 export const ADD_EXPENSES = 'ADD_EXPENSES';
+export const DELETE_EXPENSES = 'DELETE_EXPENSES';
 
 export const userLogin = (email) => ({
   type: USER,
@@ -21,6 +22,11 @@ export const getCurrencies = (payload) => ({
 export const addExpenses = (expenses) => ({
   type: ADD_EXPENSES,
   payload: expenses,
+});
+
+export const deleteExpenses = (id) => ({
+  type: DELETE_EXPENSES,
+  id,
 });
 
 export const fecthCurrencies = () => async (dispatch) => {
